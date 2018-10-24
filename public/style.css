@@ -5,19 +5,18 @@
   margin:0;
   padding:0;
   text-align:center;
-  text-color:#eea0d0;
+  color:#e3c500;
 }
 .nav li{
   display:inline-block;
-  text-color:#eea0d0;
+  color:#e3c500;
   /* width: 140px; */
-  font-family: "Montserrat"
 }
 .nav a{
   display:inline-block;
   padding:10px;
   text-decoration: none;
-  text-color:#eea0d0;
+  color:#e3c500;
   width:140px;
 }
 
@@ -27,6 +26,7 @@
 
 .new-update {
   width: 500px;
+  #e3c500
 }
 
 .new-update input {
@@ -43,6 +43,13 @@
   border-radius: 5px;
 }
 
+.new-update {
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 100px;
+}
+
 select {
   width: 100%;
   background-color: none;
@@ -51,7 +58,7 @@ select {
   margin-top: 5px;
   margin-bottom: 12px;
   padding: 10px;
-  font-family: Verdana, sans-serif;
+  font-family: cursive;
   font-size: 14px;
   border: 1px solid grey;
   border-radius: 5px;
@@ -75,6 +82,8 @@ select:focus {
   font-size: 18px;
   position: relative;
   left: 25%;
+  display: block;
+  font-family: "Henny Penny";
 }
 
 .new-update input[type=submit]:hover {
@@ -88,11 +97,52 @@ select:focus {
   left: 26%;
 }
 
+.new-update label{
+  font-family: cursive;
+  color:#e3c500;
+}
+
 h1 {
+  font-family:'Henny Penny', cursive;
   text-align:center;
+  color:#e3c500;
 }
 
 p {
   font-family: "Montserrat";
   text-align:center;
+  text-decoration: none;
+  color: #e3c500
+
+}
+
+.home-enrol{
+  font-family: 'Dancing Script', cursive;
+  font-size: 64px;
+  text-decoration-line: none;
+}
+
+a:-webkit-any-link{
+  color: #e3c500;
+  cursor: pointer;
+  text-decoration: none;
+  color:#e3c500
+}
+
+.students{
+  content: "";
+    display: block;
+    margin: 0 auto;
+    width: 50%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid black;
+}
+
+
+
+
+
+body {
+  background-color:#472b0a;
 }
