@@ -14,6 +14,7 @@ get "/all-students" do
 end
 
 get "/home/new-student" do
+  @houses = House.find_all()
   erb(:new)
 end
 
