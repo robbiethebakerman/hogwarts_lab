@@ -1,11 +1,17 @@
+require('sinatra')
+require('sinatra/contrib/all')
+require('pry-byebug')
 require_relative("models/student")
 
-options = {
-  'id' => 1,
-  'first_name' => 'Harry',
-  'last_name' => 'Potter',
-  'age' => 14,
-  'house' => 'Gryffindor'
-}
-student = Student.new(options)
-student.save()
+get "/" do
+  erb(:home)
+end
+
+get "/all-students" do
+  @students = Student.find_all()
+  erb(:index)
+end
+
+get "/home/new-student" do
+  erb(:new)
+end
