@@ -15,3 +15,9 @@ end
 get "/home/new-student" do
   erb(:new)
 end
+
+post "/create-student" do
+  @student = Student.new(params)
+  @student.save
+  redirect to "/all-students"
+end
