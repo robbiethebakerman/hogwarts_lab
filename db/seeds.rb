@@ -7,11 +7,13 @@ house1 = House.new({'name' => 'Gryffindor'})
 house2 = House.new({'name' => 'Slytherin'})
 house3 = House.new({'name' => 'Hufflepuff'})
 house4 = House.new({'name' => 'Ravenclaw'})
+house5 = House.new({'name' => 'Death Eaters'})
 
 house1.save()
 house2.save()
 house3.save()
 house4.save()
+house5.save()
 
 
 student1 = Student.new({'first_name' => 'Harry', 'last_name' => 'Potter', 'age' => 14, 'house_id' => house1.id})
